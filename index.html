@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<!--
+	███████╗██╗██╗     ██╗   ██╗███╗   ██╗ █████╗ ██████╗ 
+	██╔════╝██║██║     ██║   ██║████╗  ██║██╔══██╗██╔══██╗
+	███████╗██║██║     ██║   ██║██╔██╗ ██║███████║██████╔╝
+	╚════██║██║██║     ██║   ██║██║╚██╗██║██╔══██║██╔══██╗
+	███████║██║███████╗╚██████╔╝██║ ╚████║██║  ██║██║  ██║
+	╚══════╝╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝  ╚═╝
+-->
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+	<title>SILUNAR's Portfolio</title>
+
+	<link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://github.githubassets.com/favicon.ico">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Heebo|Noto+Sans+KR" rel="stylesheet">
+	<link rel="stylesheet" href="portfolio.css">
+
+</head>
+<script type="text/javascript">
+	console.log(
+		'%c███████╗██╗██╗     ██╗   ██╗███╗   ██╗ █████╗ ██████╗ \n' +
+		'%c██╔════╝██║██║     ██║   ██║████╗  ██║██╔══██╗██╔══██╗\n' +
+		'%c███████╗██║██║     ██║   ██║██╔██╗ ██║███████║██████╔╝\n' +
+		'%c╚════██║██║██║     ██║   ██║██║╚██╗██║██╔══██║██╔══██╗\n' +
+		'%c███████║██║███████╗╚██████╔╝██║ ╚████║██║  ██║██║  ██║\n' +
+		'%c╚══════╝╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝  ╚═╝\n'
+		,'color: pink;'
+		,'color: orange;'
+		,'color: yellow;'
+		,'color: lightgreen;'
+		,'color: lightblue;'
+		,'color: lightgray;'
+	);
+</script>
+<body>
+
+	<div class="section-container">
+		<div class="welcome-area">
+			<div class="container">
+				<div class="image-slide fade">
+					<img src="img/laptop-2588606_1920.jpg">
+				</div>
+			</div>
+		</div>
+
+		<section class="portfolio-area" id="portfolio">
+			<div class="title">
+				PORTFOLIO
+			</div>
+			<div class="filter">
+				<ul class="list">
+					<li class="listItem active" id="all">
+						All
+					</li>
+					<li class="listItem" id="uiux">
+						UI/UX
+					</li>
+					<li class="listItem" id="java">
+						JAVA
+					</li>
+					<li class="listItem" id="db">
+						DB
+					</li>
+				</ul>
+			</div>
+			<div class="container">
+				<div class="filterItem db">
+					<div class="image">
+						<div class="overlay"><i class="far fa-image"></i></div>
+						<img src="img/programming-2115930_1920.jpg">
+					</div>
+					<div class="main">
+						Project
+					</div>
+					<div class="sub">
+						Sub
+					</div>
+					<div class="text">
+						Test
+					</div>
+				</div>
+				<div class="filterItem java">
+					<div class="image">
+						<div class="overlay"><i class="far fa-image"></i></div>
+						<img src="img/laptop-2588074_1920.jpg">
+					</div>
+					<div class="main">
+						Project
+					</div>
+					<div class="sub">
+						Sub
+					</div>
+					<div class="text">
+						Test
+					</div>
+				</div>
+				<div class="filterItem uiux java">
+					<div class="image">
+						<div class="overlay"><i class="far fa-image"></i></div>
+						<img src="img/work-731198_1920.jpg">
+					</div>
+					<div class="main">
+						Project
+					</div>
+					<div class="sub">
+						Sub
+					</div>
+					<div class="text">
+						Test
+					</div>
+				</div>
+				<div class="filterItem uiux">
+					<div class="image">
+						<div class="overlay"><i class="far fa-image"></i></div>
+						<img src="img/web-design-2906159_1920.jpg">
+					</div>
+					<div class="main">
+						Project
+					</div>
+					<div class="sub">
+						Sub
+					</div>
+					<div class="text">
+						Test
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer class="footer-area">
+		<div class="info">
+			<p>Copyright © 2019 SILUNAR. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<div id="portfolioModal" class="modal"b>
+		<span class="close" id="modalClose">&times;</span>
+		<div class="container">
+			<img id="modalImage">
+			<div id="modalMain" class="modal-main"></div>
+			<div id="modalSub" class="modal-sub"></div>
+			<div id="modalText" class="modal-text"></div>
+		</div>
+	</div>
+
+	<script src="portfolio.js"></script>
+</body>
+</html>
